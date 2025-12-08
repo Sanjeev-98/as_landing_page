@@ -216,6 +216,9 @@
   .z-99 {
     z-index: 99;
   }
+  .float-right {
+    float: right;
+  }
   .container {
     width: 100%;
     @media (width >= 40rem) {
@@ -252,8 +255,17 @@
   .mt-8 {
     margin-top: calc(var(--spacing) * 8);
   }
+  .mt-\[-24px\] {
+    margin-top: -24px;
+  }
+  .mt-\[-92px\] {
+    margin-top: -92px;
+  }
   .mr-2 {
     margin-right: calc(var(--spacing) * 2);
+  }
+  .mr-\[-8px\] {
+    margin-right: -8px;
   }
   .mr-\[-250p\] {
     margin-right: -250p;
@@ -269,6 +281,9 @@
   }
   .ml-1 {
     margin-left: calc(var(--spacing) * 1);
+  }
+  .ml-\[-8px\] {
+    margin-left: -8px;
   }
   .block {
     display: block;
