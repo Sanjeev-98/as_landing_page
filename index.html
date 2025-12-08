@@ -17,6 +17,13 @@
     <meta name="twitter:description" content="Aftersell Platform" />
     <meta name="twitter:image" content="https://example.com/og-image.jpg" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="./src/output.css" />
 
     <script type="application/ld+json">
@@ -32,10 +39,28 @@
         }
       }
     </script>
+
+    <style>
+      .section-header {
+        background: linear-gradient(
+          90deg,
+          rgba(255, 255, 255, 0) -0.68%,
+          rgba(255, 255, 255, 0.12) 26.74%,
+          rgba(255, 255, 255, 0) 38.28%,
+          rgba(255, 255, 255, 0) 58.32%,
+          rgba(255, 255, 255, 0.13) 69.55%,
+          rgba(255, 255, 255, 0) 99.37%
+        );
+        backdrop-filter: blur(9.00027847290039px);
+      }
+      .font-roboto-sans {
+        font-family: "Roboto", sans-serif;
+      }
+    </style>
   </head>
-  <body class="min-h-screen bg-slate-50 text-slate-900">
+  <body class="min-h-scree bg-slate-50 text-slate-900 font-roboto-sans">
     <!-- Header Section -->
-    <header class="bg-blue-700 shadow-md">
+    <header class="bg-gray-50 shadow-md">
       <div
         class="md:hidden container mx-auto px-6 py-4 flex justify-between items-center"
       >
@@ -132,12 +157,18 @@
       </nav>
     </header>
 
-    <main id="top" class="mx-auto max-w-5xl px-6 py-16">
-      <section class="bg-gradient-1 from-blue-50 to-white">
+    <main id="top" class="mx-auto max-w-5x px- py-">
+      <section
+        class="rounded-md m-2"
+        style="
+          background-image: url('assets/bg/bg_1.svg');
+          background-position: center;
+        "
+      >
         <div class="container mx-auto px-4 py-2 md:px-0 text-center">
           <nav class="flex justify-between mb-9 md:mb-15 relative">
             <div
-              class="mx-auto px-6 flex flex-wrap space-x-4 items-center rounded-full bg-gray-50 border border-[#CFE1FD] hidden md:flex p-1"
+              class="section-header mx-auto pl-6 pr-1 py-2 flex flex-wrap space-x-15 items-center rounded-full bg-gray-50 border border-[#CFE1FD] hidden md:flex p-1"
             >
               <div>
                 <img src="assets/gm_logo.svg" alt="" />
@@ -145,14 +176,14 @@
               <div class="flex flex-wrap space-x-4">
                 <a
                   href="#"
-                  class="text-blue-600 font-semibold font-dm-sans border-b-2 border-blue-600 p-2 pb-1 sm:text-[1.2vw] xl:text-[18px]"
+                  class="text-white font-bold tracking-[0.24px] border-b- border-blue-600 p-2"
                   >Home</a
                 >
                 <div class="relative">
                   <button
                     id="desktop-option-1-toggle"
                     type="button"
-                    class="text-[#3B3D42] font-dm-sans flex items-center p-2 hover:bg-[#E9F2FE] hover:rounded-lg hover:p-2 sm:text-[1.2vw] xl:text-[18px]"
+                    class="text-white font-bold tracking-[0.24px] flex items-center border-b- border-blue-600 p-2"
                     aria-expanded="false"
                     aria-controls="desktop-option-1-dropdown"
                   >
@@ -219,12 +250,89 @@
                     >
                   </div>
                 </div>
+                <div class="relative">
+                  <button
+                    id="desktop-option-2-toggle"
+                    type="button"
+                    class="text-white font-bold tracking-[0.24px]  flex items-center border-b- border-blue-600 p-2"
+                    aria-expanded="false"
+                    aria-controls="desktop-option-2-dropdown"
+                  >
+                    Option-2
+                    <svg
+                      class="w-3 h-3 ml-1 transition-transform duration-200"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M19 9l-7 7-7-7"
+                      ></path>
+                    </svg>
+                  </button>
+                  <div
+                    id="desktop-option-2-dropdown"
+                    class="absolute left-1/2 -translate-x-1/2 mt-2 bg-white rounded-md shadow-lg p-[4px] z-20 opacity-0 invisible transition-all duration-200 ease-out flex flex-col items-start gap-[4px] whitespace-nowrap shadow-[0_1px_6.6px_0_rgba(53,125,232,0.23)] border border-[#CFE1FD] rounded-xl"
+                  >
+                    <a
+                      href="#"
+                      class="block p-2 hover:bg-[#E9F2FE] text-[#3B3D42] font-dm-sans text-[16px] font-medium leading-[24px] text-left w-full sm:text-[1.1vw] xl:text-[16px] hover:rounded-lg"
+                      >Automotive</a
+                    >
+                    <a
+                      href="#"
+                      class="block p-2 hover:bg-[#E9F2FE] text-[#3B3D42] font-dm-sans text-[16px] font-medium leading-[24px] text-left w-full sm:text-[1.1vw] xl:text-[16px] hover:rounded-lg"
+                      style="width: 100%"
+                      >Home Appliances</a
+                    >
+                    <a
+                      href="#"
+                      class="block p-2 hover:bg-[#E9F2FE] text-[#3B3D42] font-dm-sans text-[16px] font-medium leading-[24px] text-left sm:text-[1.1vw] xl:text-[16px] hover:rounded-lg"
+                      >Construction & Mining</a
+                    >
+                    <a
+                      href="#"
+                      class="block p-2 hover:bg-[#E9F2FE] text-[#3B3D42] font-dm-sans text-[16px] font-medium leading-[24px] text-left w-full sm:text-[1.1vw] xl:text-[16px] hover:rounded-lg"
+                      >Consumer Electronics</a
+                    >
+                    <a
+                      href="#"
+                      class="block p-2 hover:bg-[#E9F2FE] text-[#3B3D42] font-dm-sans text-[16px] font-medium leading-[24px] text-left w-full sm:text-[1.1vw] xl:text-[16px] hover:rounded-lg"
+                      >Machinery</a
+                    >
+                    <a
+                      href="#"
+                      class="block p-2 hover:bg-[#E9F2FE] text-[#3B3D42] font-dm-sans text-[16px] font-medium leading-[24px] text-left w-full sm:text-[1.1vw] xl:text-[16px] hover:rounded-lg"
+                      >Power Equipment</a
+                    >
+                    <a
+                      href="#"
+                      class="block p-2 hover:bg-[#E9F2FE] text-[#3B3D42] font-dm-sans text-[16px] font-medium leading-[24px] text-left w-full sm:text-[1.1vw] xl:text-[16px] hover:rounded-lg"
+                      >Agriculture Equipment</a
+                    >
+                    <a
+                      href="#"
+                      class="block p-2 hover:bg-[#E9F2FE] text-[#3B3D42] font-dm-sans text-[16px] font-medium leading-[24px] text-left w-full sm:text-[1.1vw] xl:text-[16px] hover:rounded-lg"
+                      >HVAC</a
+                    >
+                  </div>
+                </div>
               </div>
               <div>
                 <a
                   href="#"
-                  class="text-[#3B3D42] border border-2 border-blue-600 p-2 rounded-full sm:text-[1.2vw] xl:text-[18px]"
-                  >SIGNIN</a
+                  class="text-[#fff] tracking-[0.143px] font-bold border border-2 border-white px-5 py-3 rounded-full"
+                  >SIGN IN</a
+                >
+
+                               <a
+                  href="#"
+                  class="text-[#3F51B5] bg-[#fff] tracking-[0.143px] font-bold border border-2 border-white px-5 py-3 rounded-full"
+                  >SIGN IN</a
                 >
               </div>
             </div>
@@ -241,6 +349,12 @@
         );
         const desktopRoiDropdown = document.getElementById(
           "desktop-option-1-dropdown"
+        );
+        const desktopOption2Toggle = document.getElementById(
+          "desktop-option-2-toggle"
+        );
+        const desktopOption2Dropdown = document.getElementById(
+          "desktop-option-2-dropdown"
         );
 
         if (!toggle || !mobileMenu) return;
@@ -269,6 +383,24 @@
           desktopRoiDropdown.classList.add("opacity-100", "visible");
           desktopRoiToggle.setAttribute("aria-expanded", "true");
           desktopRoiToggle.querySelector("svg")?.classList.add("rotate-180");
+        };
+
+        const closeDesktopDropdown2 = () => {
+          if (!desktopOption2Dropdown || !desktopOption2Toggle) return;
+          desktopOption2Dropdown.classList.add("opacity-0", "invisible");
+          desktopOption2Dropdown.classList.remove("opacity-100", "visible");
+          desktopOption2Toggle.setAttribute("aria-expanded", "false");
+          desktopOption2Toggle
+            .querySelector("svg")
+            ?.classList.remove("rotate-180");
+        };
+
+        const openDesktopDropdown2 = () => {
+          if (!desktopOption2Dropdown || !desktopOption2Toggle) return;
+          desktopOption2Dropdown.classList.remove("opacity-0", "invisible");
+          desktopOption2Dropdown.classList.add("opacity-100", "visible");
+          desktopOption2Toggle.setAttribute("aria-expanded", "true");
+          desktopOption2Toggle.querySelector("svg")?.classList.add("rotate-180");
         };
 
         toggle.addEventListener("click", (event) => {
@@ -304,6 +436,30 @@
               !desktopRoiToggle.contains(event.target)
             ) {
               closeDesktopDropdown();
+            }
+          });
+        }
+
+        if (desktopOption2Toggle && desktopOption2Dropdown) {
+          desktopOption2Toggle.addEventListener("click", (e) => {
+            e.preventDefault();
+            const isOpen = desktopOption2Dropdown.classList.contains(
+              "opacity-100"
+            );
+            if (isOpen) {
+              closeDesktopDropdown2();
+            } else {
+              openDesktopDropdown2();
+            }
+          });
+
+          document.addEventListener("click", (event) => {
+            if (
+              desktopOption2Dropdown.classList.contains("opacity-100") &&
+              !desktopOption2Dropdown.contains(event.target) &&
+              !desktopOption2Toggle.contains(event.target)
+            ) {
+              closeDesktopDropdown2();
             }
           });
         }
@@ -351,6 +507,7 @@
           if (event.key === "Escape") {
             closeMenu();
             closeDesktopDropdown();
+            closeDesktopDropdown2();
           }
         });
       })();
