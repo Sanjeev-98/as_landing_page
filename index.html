@@ -165,7 +165,7 @@
           background-position: center;
         "
       >
-        <div class="container mx-auto px-4 py-2 md:px-0 text-center">
+        <div class="container mx-auto px-4 py-2 text-center">
           <nav class="flex justify-between mb-9 md:mb-15 relative">
             <div
               class="section-header mx-auto pl-6 pr-1 py-2 flex flex-wrap space-x-15 items-center rounded-full bg-gray-50 border border-[#CFE1FD] hidden md:flex p-1"
@@ -254,7 +254,7 @@
                   <button
                     id="desktop-option-2-toggle"
                     type="button"
-                    class="text-white font-bold tracking-[0.24px]  flex items-center border-b- border-blue-600 p-2"
+                    class="text-white font-bold tracking-[0.24px] flex items-center border-b- border-blue-600 p-2"
                     aria-expanded="false"
                     aria-controls="desktop-option-2-dropdown"
                   >
@@ -329,7 +329,7 @@
                   >SIGN IN</a
                 >
 
-                               <a
+                <a
                   href="#"
                   class="text-[#3F51B5] bg-[#fff] tracking-[0.143px] font-bold border border-2 border-white px-5 py-3 rounded-full"
                   >SIGN IN</a
@@ -337,6 +337,26 @@
               </div>
             </div>
           </nav>
+          <div
+            class="header-content-wrapper grid grid-cols-1 md:grid-cols-2 gap-6 mt-8 overfow-hidden"
+          >
+            <div class="first-content text-center md:text-left">
+              <h1 class="text-[24px] md:text-[64px] text-[#fff] font-semibold leading-[1.2]"> Where <span class="text-[#64B5F6]"> After-Sales </span>  Becomes Always-On Service</h1>
+              <p class="mt-4 md:mt-5 max-w-lg text-[#fff]">
+                GladMinds After-Sell Suite empowers OEMs, dealers, and
+                technicians to move from reactive service to predictive
+                performance, delivering faster turnarounds, lower costs, and
+                higher customer satisfaction.
+              </p>
+
+              <a href="#" class="block md:inline-block font-bold content-center mt-6 px-6 h-[52px] leading-[0.143px] text-[#3F51B5] bg-white border rounded-md"> SEE THE SUITE IN ACTION </a>
+            </div>
+
+            <div class="second-content mr-[-250p]">
+              <img class="hidden md:inline-block opacity-0" src="assets/images/dashboard.svg" alt="Dashboard Image" />
+              <img class="absolute md:right-0 md:top-[133px] max-w-[35vw]" src="assets/images/dashboard.svg" alt="Dashboard Image" />
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -400,7 +420,9 @@
           desktopOption2Dropdown.classList.remove("opacity-0", "invisible");
           desktopOption2Dropdown.classList.add("opacity-100", "visible");
           desktopOption2Toggle.setAttribute("aria-expanded", "true");
-          desktopOption2Toggle.querySelector("svg")?.classList.add("rotate-180");
+          desktopOption2Toggle
+            .querySelector("svg")
+            ?.classList.add("rotate-180");
         };
 
         toggle.addEventListener("click", (event) => {
@@ -443,9 +465,8 @@
         if (desktopOption2Toggle && desktopOption2Dropdown) {
           desktopOption2Toggle.addEventListener("click", (e) => {
             e.preventDefault();
-            const isOpen = desktopOption2Dropdown.classList.contains(
-              "opacity-100"
-            );
+            const isOpen =
+              desktopOption2Dropdown.classList.contains("opacity-100");
             if (isOpen) {
               closeDesktopDropdown2();
             } else {
