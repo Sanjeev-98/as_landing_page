@@ -628,6 +628,10 @@
     --tw-leading: 28px;
     line-height: 28px;
   }
+  .leading-\[32px\] {
+    --tw-leading: 32px;
+    line-height: 32px;
+  }
   .font-\[500\] {
     --tw-font-weight: 500;
     font-weight: 500;
@@ -913,6 +917,12 @@
     @media (width >= 48rem) {
       --tw-leading: 1.2;
       line-height: 1.2;
+    }
+  }
+  .md\:leading-\[50px\] {
+    @media (width >= 48rem) {
+      --tw-leading: 50px;
+      line-height: 50px;
     }
   }
   .md\:font-bold {
