@@ -56,6 +56,11 @@
       .font-roboto-sans {
         font-family: "Roboto", sans-serif;
       }
+      .mobile-dashboard-img {
+        left: 50%;
+        /* top: 50%; */
+        transform: translate(-50%, 0);
+      }
     </style>
   </head>
   <body class="min-h-scree bg-slate-50 text-slate-900 font-roboto-sans">
@@ -338,10 +343,15 @@
             </div>
           </nav>
           <div
-            class="header-content-wrapper grid grid-cols-1 md:grid-cols-2 gap-6 mt-8 overfow-hidden"
+            class="header-content-wrapper grid grid-cols-1 md:grid-cols-2 gap-6 mt-8 pb-5 md:pb-0 overfow-hidden"
           >
             <div class="first-content text-center md:text-left">
-              <h1 class="text-[24px] md:text-[64px] text-[#fff] font-semibold leading-[1.2]"> Where <span class="text-[#64B5F6]"> After-Sales </span>  Becomes Always-On Service</h1>
+              <h1
+                class="text-[24px] md:text-[64px] text-[#fff] font-semibold leading-[1.2]"
+              >
+                Where <span class="text-[#64B5F6]"> After-Sales </span> Becomes
+                Always-On Service
+              </h1>
               <p class="mt-4 md:mt-5 max-w-lg text-[#fff]">
                 GladMinds After-Sell Suite empowers OEMs, dealers, and
                 technicians to move from reactive service to predictive
@@ -349,12 +359,30 @@
                 higher customer satisfaction.
               </p>
 
-              <a href="#" class="block md:inline-block font-bold content-center mt-6 px-6 h-[52px] leading-[0.143px] text-[#3F51B5] bg-white border rounded-md"> SEE THE SUITE IN ACTION </a>
+              <a
+                href="#"
+                class="block md:inline-block font-bold content-center mt-6 px-6 h-[52px] leading-[0.143px] text-[#3F51B5] bg-white border rounded-md"
+              >
+                SEE THE SUITE IN ACTION
+              </a>
             </div>
 
             <div class="second-content mr-[-250p]">
-              <img class="hidden md:inline-block opacity-0" src="assets/images/dashboard.svg" alt="Dashboard Image" />
-              <img class="absolute md:right-0 md:top-[133px] max-w-[35vw]" src="assets/images/dashboard.svg" alt="Dashboard Image" />
+              <img
+                class="hidden md:inline-block opacity-0"
+                src="assets/images/dashboard.svg"
+                alt="Dashboard Image"
+              />
+              <img
+                class="hidden md:inline-block absolute md:right-0 md:top-[133px] max-w-[35vw]"
+                src="assets/images/dashboard.svg"
+                alt="Dashboard Image"
+              />
+              <img
+                class="md:hidden absolute max-w-[80vw] mobile-dashboard-img"
+                src="assets/images/full_dashboard.svg"
+                alt="Dashboard Image"
+              />
             </div>
           </div>
         </div>
