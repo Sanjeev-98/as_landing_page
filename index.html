@@ -87,7 +87,7 @@
             aria-expanded="false"
             aria-controls="mobile-menu"
           >
-           <img src="assets/icons/hamburger_icon.svg" alt="hamburger menu">
+            <img src="assets/icons/hamburger_icon.svg" alt="hamburger menu" />
           </button>
         </div>
       </div>
@@ -756,8 +756,83 @@
           </div>
         </div>
       </section>
+
+      <!-- Testimonial section -->
+      <section class="bg-white py-12 md:py-16" style="background-image: url('assets/bg/testimonial.svg'); background-size: cover; background-position: center;">
+        <div class="containe mx-aut px-4 md:px-8 overflow-clip">
+          <div class="grid grid-cols-1 md:grid-cols-[40%_60%] gap-8 md:gap-12">
+            <!-- Left side: Title and Navigation (40%) -->
+            <div>
+              <p class="hidden md:inline-block text-[#1C54E3] text-[14px] font-bold tracking-[0.175px] leading-[36px] mb-4">TESTIMONIAL</p>
+              <h5 class="text-[24px] md:text-[48px] text-center md:text-left font-medium md:font-bold leading-[32px] md:leading-[50px] text-[#424242] mb-6">
+                Client's Success <br> Stories
+              </h5>
+              <div class="flex gap-4">
+                <button id="testimonial-prev" class="w-10 h-10 flex items-center justify-center rounded-full text-[#1C55E0] hover:bg-[#1C55E0] hover:text-white hover:cursor-pointer transition-colors">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M15 18l-6-6 6-6"/>
+                  </svg>
+                </button>
+                <button id="testimonial-next" class="w-10 h-10 flex items-center justify-center rounded-full text-[#1C55E0] hover:bg-[#1C55E0] hover:text-white hover:cursor-pointer transition-colors">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 18l6-6-6-6"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- Right side: Carousel -->
+            <div class="relative overflow-hidden">
+              <div id="testimonial-carousel" class="items-center flex gap-6 transition-transform duration-500 ease-in-out">
+                <!-- Testimonial Card 1 -->
+                <div class="testimonial-card flex-shrink-0 w-full md:w-[calc(60%-12px)] bg-white rounded-[20px] p-6 md:p-8 shadow shadow-[0_0_20px_0_rgba(0,0,0,0.05)] overflow-hidden transition-all duration-500">
+                  <div class="flex items-start gap-4 mb-4">
+                    <img src="assets/images/client/client_1.svg" alt="Profile Picture" class="w-12 h-12 rounded-full" />
+                    <div>
+                      <h4 class="text-[14px] md:text-[20px] font-medium md:font-semibold text-[#fff] md:text-[#1C55E0] mb-1">John Anderson</h4>
+                      <p class="text-[12px] md:text-[16px] text-[#fff] md:text-[#555] leading-[16px] md:leading-[28px]">CEO at Heavens Solutions</p>
+                    </div>
+                  </div>
+                  <p class="text-[14px] md:text-[20px] leading-[24px] md:leading-[32px] text-[#fff] md:text-[#1E1E1E]">
+                    "Their attention to detail and creative design approach transformed our website into a visually stunning and highly functional platform. We've seen a 35% increase in traffic since the relaunch. I highly recommend them to anyone seeking professional web design services!"
+                  </p>
+                </div>
+
+                <!-- Testimonial Card 2 (Partially visible) -->
+                <div class="testimonial-card flex-shrink-0 w-full md:w-[calc(60%-12px)] bg-white shadow shadow-[0_0_20px_0_rgba(0,0,0,0.05)] rounded-[20px] p-6 md:p-8 md:opacity-80 overflow-hidden transition-all duration-500">
+                  <div class="flex items-start gap-4 mb-4">
+                    <img src="assets/images/client/client_1.svg" alt="Profile Picture" class="w-12 h-12 rounded-full" />
+                    <div>
+                      <h4 class="text-[18px] md:text-[20px] font-semibold text-[#1976D2]">Sarah Mitchell</h4>
+                      <p class="text-[14px] text-[#616161]">Operations Manager</p>
+                    </div>
+                  </div>
+                  <p class="text-[14px] md:text-[16px] leading-[24px] md:leading-[28px] text-[#424242]">
+                    "The team's expertise and dedication helped us streamline our service operations. Their solution has transformed our customer experience and reduced response times by 40%."
+                  </p>
+                </div>
+
+                <!-- Testimonial Card 3 -->
+                <div class="testimonial-card flex-shrink-0 w-full md:w-[calc(60%-12px)] bg-white rounded-[20px] p-6 md:p-8 shadow shadow-[0_0_20px_0_rgba(0,0,0,0.05)] md:opacity-80 overflow-hidden transition-all duration-500">
+                  <div class="flex items-start gap-4 mb-4">
+                    <img src="assets/images/client/client_1.svg" alt="Profile Picture" class="w-12 h-12 rounded-full" />
+                    <div>
+                      <h4 class="text-[18px] md:text-[20px] font-semibold text-[#1976D2]">Michael Chen</h4>
+                      <p class="text-[14px] text-[#616161]">Director of Technology</p>
+                    </div>
+                  </div>
+                  <p class="text-[14px] md:text-[16px] leading-[24px] md:leading-[28px] text-[#424242]">
+                    "Outstanding service and innovative solutions! The platform has significantly improved our operational efficiency and customer satisfaction scores."
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- Feature last -->
-      <section style="background-image: url('assets/bg/engineer_bg.svg');">
+      <section style="background-image: url('assets/bg/engineer_bg.svg')">
         <div class="container py-20 px-4 md:p-8 mx-auto text-cente mb-">
           <h3
             class="text-[24px] md:text-[48px] text-[#fff] font-medium md:font-bold leading-[32px] text-center md:leading-[50px]"
@@ -788,8 +863,14 @@
             <div class="text-center">
               <a
                 href="#"
-                class="block md:inline-block font-bold content-center mt-6 px-6 h-[52px] leading-[0.143px] text-[#00072F border rounded-md" 
-                style="background: linear-gradient(102deg, rgba(255, 255, 255, 0.60) 45.8%, rgba(255, 255, 255, 0.20) 133.76%);"
+                class="block md:inline-block font-bold content-center mt-6 px-6 h-[52px] leading-[0.143px] text-[#00072F border rounded-md"
+                style="
+                  background: linear-gradient(
+                    102deg,
+                    rgba(255, 255, 255, 0.6) 45.8%,
+                    rgba(255, 255, 255, 0.2) 133.76%
+                  );
+                "
               >
                 <div class="flex gap-2 justify-center">
                   <p class="leading-[1]">EXPLORE AFTERBUY</p>
@@ -971,6 +1052,116 @@
             closeDesktopDropdown2();
           }
         });
+      })();
+
+      // Testimonial Carousel
+      (() => {
+        const carousel = document.getElementById("testimonial-carousel");
+        const prevBtn = document.getElementById("testimonial-prev");
+        const nextBtn = document.getElementById("testimonial-next");
+        
+        if (!carousel || !prevBtn || !nextBtn) return;
+        
+        let currentIndex = 0;
+        const cards = carousel.querySelectorAll(".testimonial-card");
+        const totalCards = cards.length;
+        
+        const updateCarousel = () => {
+          const cardWidth = cards[0].offsetWidth;
+          const gap = 24; // gap-6 = 24px
+          const offset = currentIndex * (cardWidth + gap);
+          carousel.style.transform = `translateX(-${offset}px)`;
+          
+          // Update card heights and backgrounds
+          cards.forEach((card, index) => {
+            // Find h4 tag (name)
+            const h4Tag = card.querySelector('h4');
+            
+            // Find subtitle p tag (inside the inner div)
+            const subtitleDiv = card.querySelector('.flex.items-start.gap-4');
+            const subtitlePTag = subtitleDiv ? subtitleDiv.querySelector('p') : null;
+            
+            // Find testimonial p tag (direct child of card, not in the div)
+            const allPTags = Array.from(card.querySelectorAll('p'));
+            const testimonialPTag = allPTags[allPTags.length - 1];
+            
+            if (index === currentIndex) {
+              // Main card: full height, white background
+              card.style.height = 'auto';
+              card.style.backgroundColor = '#ffffff';
+              card.style.margin = '10px';
+              card.classList.remove('md:opacity-80');
+              card.classList.add('md:opacity-100');
+              // Update h4 tag classes for active card
+              if (h4Tag) {
+                h4Tag.setAttribute('class', 'text-[14px] md:text-[20px] font-medium md:font-semibold text-[#fff] md:text-[#1C55E0] mb-1');
+              }
+              // Update p tag classes for active card
+              if (subtitlePTag) {
+                subtitlePTag.setAttribute('class', 'text-[12px] md:text-[16px] text-[#fff] md:text-[#555] leading-[16px] md:leading-[28px]');
+              }
+              if (testimonialPTag) {
+                testimonialPTag.setAttribute('class', 'text-[14px] md:text-[20px] leading-[24px] md:leading-[32px] text-[#fff] md:text-[#1E1E1E]');
+              }
+            } else {
+              // Hidden/preview cards: fixed height, gray background
+              card.style.height = '200px';
+              card.style.backgroundColor = '#F5F5F5';
+              card.style.margin = '0px';
+              card.classList.remove('md:opacity-100');
+              card.classList.add('md:opacity-80');
+              // Reset h4 tag classes for inactive cards
+              if (h4Tag) {
+                h4Tag.setAttribute('class', 'text-[18px] md:text-[20px] font-semibold text-[#1976D2]');
+              }
+              // Reset p tag classes for inactive cards
+              if (subtitlePTag) {
+                subtitlePTag.setAttribute('class', 'text-[14px] text-[#616161]');
+              }
+              if (testimonialPTag) {
+                testimonialPTag.setAttribute('class', 'text-[14px] md:text-[16px] leading-[24px] md:leading-[28px] text-[#424242]');
+              }
+            }
+          });
+        };
+        
+        nextBtn.addEventListener("click", () => {
+          if (currentIndex < totalCards - 1) {
+            currentIndex++;
+            updateCarousel();
+          }
+        });
+        
+        prevBtn.addEventListener("click", () => {
+          if (currentIndex > 0) {
+            currentIndex--;
+            updateCarousel();
+          }
+        });
+        
+        // Apply engineer_bg background to testimonial cards on mobile devices only
+        function applyMobileBackground() {
+          const isMobile = window.innerWidth < 768;
+          cards.forEach(card => {
+            if (isMobile) {
+              card.style.backgroundImage = "url('assets/bg/engineer_bg.svg')";
+              card.style.backgroundSize = "cover";
+              card.style.backgroundPosition = "center";
+            } else {
+              card.style.backgroundImage = "none";
+            }
+          });
+        }
+        
+        // Update on window resize
+        window.addEventListener("resize", () => {
+          updateCarousel();
+          applyMobileBackground();
+        });
+        
+        // Initialize carousel and apply mobile background
+        updateCarousel();
+        applyMobileBackground();
       })();
     </script>
   </body>
