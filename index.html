@@ -158,7 +158,8 @@
         class="rounded-md m-2"
         style="
           background-image: url('assets/bg/bg_1.svg');
-          background-size: cover; background-position: center;
+          background-size: cover;
+          background-position: center;
         "
       >
         <div class="container mx-auto px-4 py-2 text-center">
@@ -669,7 +670,7 @@
       </section>
 
       <section class="bg-[#F4F4FA]">
-        <div class="container p-4 md:p-8 mx-auto">
+        <div class="container p-4 md:p-4 mx-auto">
           <div class="text-center">
             <h3
               class="text-[24px] md:text-[48px] font-medium md:font-bold leading-[32px] leading-[50px] text-[#424242]"
@@ -681,7 +682,7 @@
 
           <div class="md:py-12 grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
             <div
-              class="graph md:p-4 flex flex-col justify-center border border-6 border-[#fff] rounded-[20px]"
+              class="graph p-4 md:pt-12 flex flex-col justify-center border border-6 border-[#fff] rounded-[20px] items-center"
               style="
                 background: linear-gradient(
                     182deg,
@@ -691,7 +692,11 @@
                   #fff;
               "
             >
-              <img src="assets/images/warranty_claim_pie.svg" alt="" />
+              <img
+                src="assets/images/warranty_claim_pie.svg"
+                alt=""
+                class=" mb-5"
+              />
               <div
                 class="flex justify-center md:text-[24px] text-[18px] font-medium leading-[32px] text-[#3F51B5]"
               >
@@ -701,7 +706,7 @@
             </div>
             <!-- waaranty claim cost -->
             <div
-              class="graph md:p-4 flex flex-col justify-center border border-6 border-[#fff] rounded-[20px]"
+              class="graph p-4 md:pt-12 flex flex-col justify-center border border-6 border-[#fff] rounded-[20px] items-center"
               style="
                 background: linear-gradient(
                     182deg,
@@ -711,17 +716,25 @@
                   #fff;
               "
             >
-              <img src="assets/images/warranty_claim_pie.svg" alt="" />
+              <img
+                src="assets/images/warranty_claim_pie.svg"
+                alt=""
+                class="md:h-[230px] md:w-[230px] mb-5"
+              />
               <div
                 class="flex justify-center md:text-[24px] text-[18px] font-medium leading-[32px] text-[#3F51B5]"
               >
-                <img src="assets/icons/arrow_down.svg" alt="Down arrow" /> 30%
-                warranty claim costs
+                <img
+                  src="assets/icons/arrow_down.svg"
+                  alt="Down arrow"
+                  class="md:w-[15px]"
+                />
+                30% warranty claim costs
               </div>
             </div>
             <!-- Technician Productivity -->
             <div
-              class="graph md:p-4 flex flex-col justify-center border border-6 border-[#fff] rounded-[20px]"
+              class="graph p-4 md:pt-12 flex flex-col justify-center border border-6 border-[#fff] rounded-[20px] items-center"
               style="
                 background: linear-gradient(
                     182deg,
@@ -731,12 +744,20 @@
                   #fff;
               "
             >
-              <img src="assets/images/warranty_claim_pie.svg" alt="" />
+              <img
+                src="assets/images/technician_productivity.svg"
+                alt="Technician Productivity"
+                class="mb-5"
+              />
               <div
                 class="flex justify-center md:text-[24px] text-[18px] font-medium leading-[32px] text-[#3F51B5]"
               >
-                <img src="assets/icons/arrow_down.svg" alt="Down arrow" /> 30%
-                warranty claim costs
+                <img
+                  src="assets/icons/arrow_up.svg"
+                  alt="Up arrow"
+                  class="md:w-[15px]"
+                />
+                40% technician productivity
               </div>
             </div>
           </div>
@@ -758,98 +779,207 @@
       </section>
 
       <!-- Testimonial section -->
-      <section class="bg-white py-12 md:py-16" style="background-image: url('assets/bg/testimonial.svg'); background-size: cover; background-position: center;">
+      <section
+        class="bg-white py-12 md:py-16"
+        style="
+          background-image: url('assets/bg/testimonial.svg');
+          background-size: cover;
+          background-position: center;
+        "
+      >
         <div class="containe mx-aut px-4 md:px-8 overflow-hidden">
           <div class="grid grid-cols-1 md:grid-cols-[40%_60%] gap-8 md:gap-12">
             <!-- Left side: Title and Navigation (40%) -->
             <div>
-              <p class="hidden md:inline-block text-[#1C54E3] text-[14px] font-bold tracking-[0.175px] leading-[36px] mb-4">TESTIMONIAL</p>
-              <h5 class="text-[24px] md:text-[48px] text-center md:text-left font-medium md:font-bold leading-[32px] md:leading-[50px] text-[#424242] mb-6">
-                Client's Success <br> Stories
+              <p
+                class="hidden md:inline-block text-[#1C54E3] text-[14px] font-bold tracking-[0.175px] leading-[36px] mb-4"
+              >
+                TESTIMONIAL
+              </p>
+              <h5
+                class="text-[24px] md:text-[48px] text-center md:text-left font-medium md:font-bold leading-[32px] md:leading-[50px] text-[#424242] mb-6"
+              >
+                Client's Success <br />
+                Stories
               </h5>
               <div class="hidden md:flex gap-4">
-                <button id="testimonial-prev" class="w-10 h-10 flex items-center justify-center rounded-full text-[#1C55E0] hover:bg-[#1C55E0] hover:text-white hover:cursor-pointer transition-colors">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M15 18l-6-6 6-6"/>
+                <button
+                  id="testimonial-prev"
+                  class="w-10 h-10 flex items-center justify-center rounded-full text-[#1C55E0] hover:bg-[#1C55E0] hover:text-white hover:cursor-pointer transition-colors"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M15 18l-6-6 6-6" />
                   </svg>
                 </button>
-                <button id="testimonial-next" class="w-10 h-10 flex items-center justify-center rounded-full text-[#1C55E0] hover:bg-[#1C55E0] hover:text-white hover:cursor-pointer transition-colors">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M9 18l6-6-6-6"/>
+                <button
+                  id="testimonial-next"
+                  class="w-10 h-10 flex items-center justify-center rounded-full text-[#1C55E0] hover:bg-[#1C55E0] hover:text-white hover:cursor-pointer transition-colors"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M9 18l6-6-6-6" />
                   </svg>
                 </button>
               </div>
             </div>
 
             <!-- Right side: Carousel -->
-            <div class="relative overflow-visible md:overflow-hidden w-screen md:w-auto -mx-4 md:mx-0">
-              <div id="testimonial-carousel" class="items-center flex gap-4 md:gap-6 transition-transform duration-500 ease-in-out px-4 md:px-0">
+            <div
+              class="relative overflow-visible md:overflow-hidden w-screen md:w-auto -mx-4 md:mx-0"
+            >
+              <div
+                id="testimonial-carousel"
+                class="items-center flex gap-4 md:gap-6 transition-transform duration-500 ease-in-out px-4 md:px-0"
+              >
                 <!-- Testimonial Card 1 -->
-                <div class="testimonial-card flex-shrink-0 w-[calc(100vw-48px)] md:w-[calc(60%-12px)] bg-white rounded-[20px] p-6 md:p-8 shadow shadow-[0_0_20px_0_rgba(0,0,0,0.05)] overflow-hidden transition-all duration-500">
+                <div
+                  class="testimonial-card flex-shrink-0 w-[calc(100vw-48px)] md:w-[calc(60%-12px)] bg-white rounded-[20px] p-6 md:p-8 shadow shadow-[0_0_20px_0_rgba(0,0,0,0.05)] overflow-hidden transition-all duration-500"
+                >
                   <div class="flex items-start gap-4 mb-4">
-                    <img src="assets/images/client/client_1.svg" alt="Profile Picture" class="w-12 h-12 rounded-full" />
+                    <img
+                      src="assets/images/client/client_1.svg"
+                      alt="Profile Picture"
+                      class="w-12 h-12 rounded-full"
+                    />
                     <div>
-                      <h4 class="text-[14px] md:text-[20px] font-medium md:font-semibold text-[#fff] md:text-[#1C55E0] mb-1">John Anderson</h4>
-                      <p class="text-[12px] md:text-[16px] text-[#fff] md:text-[#555] leading-[16px] md:leading-[28px]">CEO at Heavens Solutions</p>
+                      <h4
+                        class="text-[14px] md:text-[20px] font-medium md:font-semibold text-[#fff] md:text-[#1C55E0] mb-1"
+                      >
+                        John Anderson
+                      </h4>
+                      <p
+                        class="text-[12px] md:text-[16px] text-[#fff] md:text-[#555] leading-[16px] md:leading-[28px]"
+                      >
+                        CEO at Heavens Solutions
+                      </p>
                     </div>
                   </div>
-                  <p class="text-[14px] md:text-[20px] leading-[24px] md:leading-[32px] text-[#fff] md:text-[#1E1E1E]">
-                    "Their attention to detail and creative design approach transformed our website into a visually stunning and highly functional platform. We've seen a 35% increase in traffic since the relaunch. I highly recommend them to anyone seeking professional web design services!"
+                  <p
+                    class="text-[14px] md:text-[20px] leading-[24px] md:leading-[32px] text-[#fff] md:text-[#1E1E1E]"
+                  >
+                    "Their attention to detail and creative design approach
+                    transformed our website into a visually stunning and highly
+                    functional platform. We've seen a 35% increase in traffic
+                    since the relaunch. I highly recommend them to anyone
+                    seeking professional web design services!"
                   </p>
                 </div>
 
                 <!-- Testimonial Card 2 (Partially visible) -->
-                <div class="testimonial-card flex-shrink-0 w-[calc(100vw-48px)] md:w-[calc(60%-12px)] bg-white shadow shadow-[0_0_20px_0_rgba(0,0,0,0.05)] rounded-[20px] p-6 md:p-8 md:opacity-80 overflow-hidden transition-all duration-500">
+                <div
+                  class="testimonial-card flex-shrink-0 w-[calc(100vw-48px)] md:w-[calc(60%-12px)] bg-white shadow shadow-[0_0_20px_0_rgba(0,0,0,0.05)] rounded-[20px] p-6 md:p-8 md:opacity-80 overflow-hidden transition-all duration-500"
+                >
                   <div class="flex items-start gap-4 mb-4">
-                    <img src="assets/images/client/client_1.svg" alt="Profile Picture" class="w-12 h-12 rounded-full" />
+                    <img
+                      src="assets/images/client/client_1.svg"
+                      alt="Profile Picture"
+                      class="w-12 h-12 rounded-full"
+                    />
                     <div>
-                      <h4 class="text-[18px] md:text-[20px] font-semibold text-[#1976D2]">Sarah Mitchell</h4>
-                      <p class="text-[14px] text-[#616161]">Operations Manager</p>
+                      <h4
+                        class="text-[18px] md:text-[20px] font-semibold text-[#1976D2]"
+                      >
+                        Sarah Mitchell
+                      </h4>
+                      <p class="text-[14px] text-[#616161]">
+                        Operations Manager
+                      </p>
                     </div>
                   </div>
-                  <p class="text-[14px] md:text-[16px] leading-[24px] md:leading-[28px] text-[#424242]">
-                    "The team's expertise and dedication helped us streamline our service operations. Their solution has transformed our customer experience and reduced response times by 40%."
+                  <p
+                    class="text-[14px] md:text-[16px] leading-[24px] md:leading-[28px] text-[#424242]"
+                  >
+                    "The team's expertise and dedication helped us streamline
+                    our service operations. Their solution has transformed our
+                    customer experience and reduced response times by 40%."
                   </p>
                 </div>
 
                 <!-- Testimonial Card 3 -->
-                <div class="testimonial-card flex-shrink-0 w-[calc(100vw-48px)] md:w-[calc(60%-12px)] bg-white rounded-[20px] p-6 md:p-8 shadow shadow-[0_0_20px_0_rgba(0,0,0,0.05)] md:opacity-80 overflow-hidden transition-all duration-500">
+                <div
+                  class="testimonial-card flex-shrink-0 w-[calc(100vw-48px)] md:w-[calc(60%-12px)] bg-white rounded-[20px] p-6 md:p-8 shadow shadow-[0_0_20px_0_rgba(0,0,0,0.05)] md:opacity-80 overflow-hidden transition-all duration-500"
+                >
                   <div class="flex items-start gap-4 mb-4">
-                    <img src="assets/images/client/client_1.svg" alt="Profile Picture" class="w-12 h-12 rounded-full" />
+                    <img
+                      src="assets/images/client/client_1.svg"
+                      alt="Profile Picture"
+                      class="w-12 h-12 rounded-full"
+                    />
                     <div>
-                      <h4 class="text-[18px] md:text-[20px] font-semibold text-[#1976D2]">Michael Chen</h4>
-                      <p class="text-[14px] text-[#616161]">Director of Technology</p>
+                      <h4
+                        class="text-[18px] md:text-[20px] font-semibold text-[#1976D2]"
+                      >
+                        Michael Chen
+                      </h4>
+                      <p class="text-[14px] text-[#616161]">
+                        Director of Technology
+                      </p>
                     </div>
                   </div>
-                  <p class="text-[14px] md:text-[16px] leading-[24px] md:leading-[28px] text-[#424242]">
-                    "Outstanding service and innovative solutions! The platform has significantly improved our operational efficiency and customer satisfaction scores."
+                  <p
+                    class="text-[14px] md:text-[16px] leading-[24px] md:leading-[28px] text-[#424242]"
+                  >
+                    "Outstanding service and innovative solutions! The platform
+                    has significantly improved our operational efficiency and
+                    customer satisfaction scores."
                   </p>
                 </div>
               </div>
 
               <!-- Mobile device next/prev -->
-              <div class="md:hidden mt-6 flex items-center justify-between px-4 mx-2">
+              <div
+                class="md:hidden mt-6 flex items-center justify-between px-4 mx-2"
+              >
                 <button
                   id="testimonial-prev-mobile"
                   class="w-6 h-6 flex items-center justify-center rounded-full bg-[#E7E0FA] text-[#5C4ACB] shadow shadow-[0_0_10px_0_rgba(0,0,0,0.12)] active:scale-95 transition cursor-pointer"
                   aria-label="Previous testimonial"
                 >
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
                     <path d="M15 18l-6-6 6-6" />
                   </svg>
                 </button>
-                <div id="testimonial-dots" class="flex items-center gap-2"></div>
+                <div
+                  id="testimonial-dots"
+                  class="flex items-center gap-2"
+                ></div>
                 <button
                   id="testimonial-next-mobile"
                   class="w-6 h-6 flex items-center justify-center rounded-full bg-[#E7E0FA] text-[#5C4ACB] shadow shadow-[0_0_10px_0_rgba(0,0,0,0.12)] active:scale-95 transition cursor-pointer"
                   aria-label="Next testimonial"
                 >
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
                     <path d="M9 18l6-6-6-6" />
                   </svg>
                 </button>
               </div>
-              
             </div>
           </div>
         </div>
@@ -1083,12 +1213,16 @@
         const carousel = document.getElementById("testimonial-carousel");
         const prevBtn = document.getElementById("testimonial-prev");
         const nextBtn = document.getElementById("testimonial-next");
-        const prevBtnMobile = document.getElementById("testimonial-prev-mobile");
-        const nextBtnMobile = document.getElementById("testimonial-next-mobile");
+        const prevBtnMobile = document.getElementById(
+          "testimonial-prev-mobile"
+        );
+        const nextBtnMobile = document.getElementById(
+          "testimonial-next-mobile"
+        );
         const dotsContainer = document.getElementById("testimonial-dots");
-        
+
         if (!carousel || !prevBtn || !nextBtn) return;
-        
+
         let currentIndex = 0;
         const cards = carousel.querySelectorAll(".testimonial-card");
         const totalCards = cards.length;
@@ -1105,12 +1239,13 @@
           dotsContainer.innerHTML = "";
           for (let i = 0; i < totalCards; i++) {
             const dot = document.createElement("span");
-            dot.className = "w-3 h-3 rounded-full bg-[#E4DDF7] transition-colors duration-200";
+            dot.className =
+              "w-3 h-3 rounded-full bg-[#E4DDF7] transition-colors duration-200";
             dot.setAttribute("data-index", String(i));
             dotsContainer.appendChild(dot);
           }
         }
-        
+
         const updateCarousel = () => {
           const isMobile = window.innerWidth < 768;
           let cardWidth = cards[0].offsetWidth;
@@ -1118,55 +1253,75 @@
           // Simple offset: no adjustment needed, carousel padding is handled by flex layout
           const offset = currentIndex * (cardWidth + gap);
           carousel.style.transform = `translateX(-${offset}px)`;
-          
+
           // Update card heights and backgrounds
           cards.forEach((card, index) => {
             // Find h4 tag (name)
-            const h4Tag = card.querySelector('h4');
-            
+            const h4Tag = card.querySelector("h4");
+
             // Find subtitle p tag (inside the inner div)
-            const subtitleDiv = card.querySelector('.flex.items-start.gap-4');
-            const subtitlePTag = subtitleDiv ? subtitleDiv.querySelector('p') : null;
-            
+            const subtitleDiv = card.querySelector(".flex.items-start.gap-4");
+            const subtitlePTag = subtitleDiv
+              ? subtitleDiv.querySelector("p")
+              : null;
+
             // Find testimonial p tag (direct child of card, not in the div)
-            const allPTags = Array.from(card.querySelectorAll('p'));
+            const allPTags = Array.from(card.querySelectorAll("p"));
             const testimonialPTag = allPTags[allPTags.length - 1];
-            
+
             if (index === currentIndex) {
               // Main card: full height, white background
-              card.style.height = 'auto';
-              card.style.backgroundColor = '#ffffff';
-              card.style.margin = '10px';
-              card.classList.remove('md:opacity-80');
-              card.classList.add('md:opacity-100');
+              card.style.height = "auto";
+              card.style.backgroundColor = "#ffffff";
+              card.style.margin = "10px";
+              card.classList.remove("md:opacity-80");
+              card.classList.add("md:opacity-100");
               // Update h4 tag classes for active card
               if (h4Tag) {
-                h4Tag.setAttribute('class', 'text-[14px] md:text-[20px] font-medium md:font-semibold text-[#fff] md:text-[#1C55E0] mb-1');
+                h4Tag.setAttribute(
+                  "class",
+                  "text-[14px] md:text-[20px] font-medium md:font-semibold text-[#fff] md:text-[#1C55E0] mb-1"
+                );
               }
               // Update p tag classes for active card
               if (subtitlePTag) {
-                subtitlePTag.setAttribute('class', 'text-[12px] md:text-[16px] text-[#fff] md:text-[#555] leading-[16px] md:leading-[28px]');
+                subtitlePTag.setAttribute(
+                  "class",
+                  "text-[12px] md:text-[16px] text-[#fff] md:text-[#555] leading-[16px] md:leading-[28px]"
+                );
               }
               if (testimonialPTag) {
-                testimonialPTag.setAttribute('class', 'text-[14px] md:text-[20px] leading-[24px] md:leading-[32px] text-[#fff] md:text-[#1E1E1E]');
+                testimonialPTag.setAttribute(
+                  "class",
+                  "text-[14px] md:text-[20px] leading-[24px] md:leading-[32px] text-[#fff] md:text-[#1E1E1E]"
+                );
               }
             } else {
               // Hidden/preview cards: fixed height, gray background
-              card.style.height = '200px';
-              card.style.backgroundColor = '#F5F5F5';
-              card.style.margin = '0px';
-              card.classList.remove('md:opacity-100');
-              card.classList.add('md:opacity-80');
+              card.style.height = "200px";
+              card.style.backgroundColor = "#F5F5F5";
+              card.style.margin = "0px";
+              card.classList.remove("md:opacity-100");
+              card.classList.add("md:opacity-80");
               // Reset h4 tag classes for inactive cards
               if (h4Tag) {
-                h4Tag.setAttribute('class', 'text-[18px] md:text-[20px] font-semibold text-[#1976D2]');
+                h4Tag.setAttribute(
+                  "class",
+                  "text-[18px] md:text-[20px] font-semibold text-[#1976D2]"
+                );
               }
               // Reset p tag classes for inactive cards
               if (subtitlePTag) {
-                subtitlePTag.setAttribute('class', 'text-[14px] text-[#616161]');
+                subtitlePTag.setAttribute(
+                  "class",
+                  "text-[14px] text-[#616161]"
+                );
               }
               if (testimonialPTag) {
-                testimonialPTag.setAttribute('class', 'text-[14px] md:text-[16px] leading-[24px] md:leading-[28px] text-[#424242]');
+                testimonialPTag.setAttribute(
+                  "class",
+                  "text-[14px] md:text-[16px] leading-[24px] md:leading-[28px] text-[#424242]"
+                );
               }
             }
           });
@@ -1191,14 +1346,14 @@
           setButtonState(nextBtn, currentIndex === totalCards - 1);
           setButtonState(nextBtnMobile, currentIndex === totalCards - 1);
         };
-        
+
         nextBtn.addEventListener("click", () => {
           if (currentIndex < totalCards - 1) {
             currentIndex++;
             updateCarousel();
           }
         });
-        
+
         prevBtn.addEventListener("click", () => {
           if (currentIndex > 0) {
             currentIndex--;
@@ -1224,11 +1379,11 @@
             }
           });
         }
-        
+
         // Apply engineer_bg background to testimonial cards on mobile devices only
         function applyMobileBackground() {
           const isMobile = window.innerWidth < 768;
-          cards.forEach(card => {
+          cards.forEach((card) => {
             if (isMobile) {
               card.style.backgroundImage = "url('assets/bg/engineer_bg.svg')";
               card.style.backgroundSize = "cover";
@@ -1238,13 +1393,13 @@
             }
           });
         }
-        
+
         // Update on window resize
         window.addEventListener("resize", () => {
           updateCarousel();
           applyMobileBackground();
         });
-        
+
         // Initialize carousel and apply mobile background
         updateCarousel();
         applyMobileBackground();
