@@ -430,26 +430,31 @@
 
           <div>
             <div class="md:hidden flex justify-center">
-              <!-- <img
-                src="assets/images/gm_btn_rectangle.svg"
+              <img
+                src="assets/images/gm_btn_rounded.svg"
                 alt=""
                 class="z-99"
-              /> -->
-              <div class="text-[20px] text-[#0D47A1] font-bold flex  leading-8 tracking-[0.05px] w-[265px] h-[75px]">
-                 GLADMINDS
-              </div>
-
+              />
+              <!-- <div
+                class="text-[20px] text-[#0D47A1] font-bold flex justify-center items-center border border-7 border-[#fff] rounded-[66px] leading-8 tracking-[0.05px] w-[265px] h-[75px] bg-[linear-gradient(176deg,#C6D6EB_8.6%,#FFF_45.9%)]"
+                style="
+                  box-shadow: 0 4px 4px 0 rgba(12, 1, 77, 0.12),
+                    0 0 11.1px 0 #001483 inset;
+                "
+              >
+                GLADMINDS
+              </div> -->
             </div>
             <div class="md:hidden flex justify-between">
               <img
                 src="assets/icons/top_border_left.svg"
                 alt="top border-left"
-                class="ml-[-8px] mt-[-92px]"
+                class="ml-[-4px] mt-[-104px] w-[60px]"
               />
               <img
                 src="assets/icons/top_border_right.svg"
                 alt="top border-right"
-                class="mr-[-8px] mt-[-92px]"
+                class="mr-[-4px] mt-[-100px] w-[60px]"
               />
             </div>
             <div
@@ -699,7 +704,7 @@
               <img
                 src="assets/images/service_closure_graph.svg"
                 alt=""
-                class=" mb-5"
+                class="mb-5"
               />
               <div
                 class="flex justify-center md:text-[24px] text-[18px] font-medium leading-[32px] text-[#3F51B5]"
@@ -1389,7 +1394,8 @@
           const isMobile = window.innerWidth < 768;
           cards.forEach((card) => {
             if (isMobile) {
-              card.style.backgroundImage = "url('assets/bg/testimonial_bg_mobile.svg')";
+              card.style.backgroundImage =
+                "url('assets/bg/testimonial_bg_mobile.svg')";
               card.style.backgroundSize = "cover";
               card.style.backgroundPosition = "center";
             } else {
